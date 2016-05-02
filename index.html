@@ -17,10 +17,33 @@
 				font-weight: normal;
 				font-style: normal;
 			}
+
 			html, body, p, h1, h2, h3, a:link, a:active, a:visited {
 				margin: 0;
 				padding: 0;
-				color: #eee;
+				color: #FFFFFF;
+			}
+
+			body {
+				text-align: center;
+				font-family: 'Open Sans', sans-serif;
+				background-color: #060026;
+			}
+
+			a:hover {
+				color: #1294CD;
+			}
+
+			.color-primary {
+				color: #0C77B8;
+			}
+
+			.color-secondary {
+				color: #F00029;
+			}
+
+			.color-tertiary {
+				color: #F99239;
 			}
 
 			.links a {
@@ -31,16 +54,6 @@
 				padding: 0.1em;
 			}
 
-			a:hover {
-				color: #ddd;
-			}
-
-			body {
-				text-align: center;
-				font-family: 'Open Sans', sans-serif;
-				background-color: #111;
-			}
-
 			main {
 				padding: 120px 0 60px;
 				max-width: 800px;
@@ -48,7 +61,6 @@
 			}
 
 			h1, h2, h3 {
-				color: #aaa;
 				font-family: 'Rokkitt', serif;
 			}
 
@@ -63,8 +75,8 @@
 	</head>
 	<body>
 		<main>
-			<h1>Paul Statezny</h1>
-			<h2>I'm an experienced software developer specializing in full-stack web development.</h2>
+			<h1 class="color-primary">Paul Statezny</h1>
+			<h2 class="color-secondary">I'm an experienced software developer specializing in full-stack web development.</h2>
 			<section class="links">
 				<a href="https://www.linkedin.com/in/paulstatezny">&#xe252;</a>
 				<a href="https://github.com/paulstatezny">&#xe237;</a>
@@ -76,18 +88,18 @@
 				<p>I have a passion for learning and applying time-tested principles of quality software development, and for passing them along through mentoring others.</p>
 			</section>
 			<section class="capabilities">
-				<h2>Capabilities</h2>
+				<h2 class="color-primary">Capabilities</h2>
 
-				<h3>Frontend</h3>
+				<h3 class="color-tertiary">Frontend</h3>
 				<p>JavaScript, React.js, Angular.js, jQuery.</p>
 
-				<h3>Backend</h3>
+				<h3 class="color-tertiary">Backend</h3>
 				<p>PHP, Node.js, Java, MySQL.</p>
 
-				<h3>Server Administration</h3>
+				<h3 class="color-tertiary">Server Administration</h3>
 				<p>Bash Scripting, development environment setup.</p>
 
-				<h3>Technical Leadership</h3>
+				<h3 class="color-tertiary">Technical Leadership</h3>
 				<p>Leading teams, choosing fitting technologies, mentoring other developers.</p>
 			</section>
 		</main>
