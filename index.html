@@ -24,26 +24,114 @@
 				color: #FFFFFF;
 			}
 
+			p {
+				margin: 1em 0;
+			}
+
 			body {
-				text-align: center;
 				font-family: 'Open Sans', sans-serif;
-				background-color: #060026;
+				background-color: #181743;
+			}
+
+			header.container {
+				text-align: center;
+				padding: 100px 15px 80px;
+			}
+
+			section {
+				padding: 20px 0;
+			}
+
+			h1, h2, .call-to-action {
+				font-family: 'Rokkitt', serif;
+			}
+
+			h1 {
+				font-size: 6em;
+			}
+
+			h2 {
+				font-size: 2.4em;
+			}
+
+			h3 {
+				font-size: 1.6em;
+			}
+
+			.separator {
+				display: block;
+				padding: 10px 0;
+				background-color: rgba(24, 23, 67, 0.8);
 			}
 
 			a:hover {
-				color: #1294CD;
+				color: #39AEFF;
 			}
 
 			.color-primary {
-				color: #0C77B8;
+				color: #2C97F7;
 			}
 
 			.color-secondary {
-				color: #F00029;
+				color: #FF4052;
 			}
 
 			.color-tertiary {
-				color: #F99239;
+				color: #39AEFF;
+			}
+
+			.container {
+				padding: 60px 15px;
+				max-width: 800px;
+				margin: 0 auto;
+				position: relative;
+			}
+
+			.row {
+				overflow: auto;
+			}
+
+			.condensed-text {
+				margin: 0;
+			}
+
+			.column-container__half-column {
+				float: left;
+				width: 50%;
+				padding: 10px;
+				box-sizing: border-box;
+			}
+
+			@media (max-width: 699px) {
+				.column-container__half-column {
+					width: 100%;
+				}
+			}
+
+			@media (min-width: 700px) {
+				.column-container__half-column:first-child {
+					padding-left: 0;
+				}
+
+				.column-container__half-column:last-child {
+					padding-right: 0;
+				}
+			}
+
+			.sr-only {
+				position: absolute;
+				width: 1px;
+				height: 1px;
+				padding: 0;
+				margin: -1px;
+				overflow: hidden;
+				clip: rect(0,0,0,0);
+				border: 0;
+			}
+
+			.background--light, .background--light p, .background--light h2 {
+				background: #fff;
+				color: #181743;
 			}
 
 			.links a {
@@ -54,53 +142,124 @@
 				padding: 0.1em;
 			}
 
-			main {
-				padding: 120px 0 60px;
-				max-width: 800px;
-				margin: 0 auto;
+			.summary {
+				text-align: left;
+			}
+			.capabilities h3 {
+				font-size: 1.2em;
+				margin-top: 0.5em;
 			}
 
-			h1, h2, h3 {
-				font-family: 'Rokkitt', serif;
+			.call-to-action {
+				text-align: center;
 			}
 
-			h1 {
-				font-size: 6em;
+			@media (max-width: 699px) {
+				h1 {
+					font-size: 5em;
+				}
+
+				header h2 {
+					font-size: 2em;
+				}
+
+				.links a {
+					font-size: 4.5em;
+				}
 			}
 
-			section {
-				padding: 20px 0;
+			@media (max-width: 599px) {
+				h1 {
+					font-size: 4.5em;
+				}
+
+				header h2 {
+					font-size: 1.65em;
+				}
+
+				.links a {
+					font-size: 4em;
+				}
+
+				.container {
+					padding: 45px 15px;
+				}
+
+				header.container {
+					padding: 80px 15px 60px;
+				}
+			}
+
+			@media (max-width: 499px) {
+				h1 {
+					font-size: 4em;
+				}
+
+				header h2 {
+					font-size: 1.3em;
+				}
+			}
+
+			@media (max-width: 399px) {
+				h1 {
+					font-size: 2.8em;
+				}
+
+				header h2 {
+					font-size: 1.1em;
+				}
+
+				.links a {
+					font-size: 3.5em;
+				}
+
+				.container {
+					padding: 30px 15px;
+				}
 			}
 		</style>
 	</head>
 	<body>
 		<main>
-			<h1 class="color-primary">Paul Statezny</h1>
-			<h2 class="color-secondary">I'm an experienced software developer specializing in full-stack web development.</h2>
-			<section class="links">
-				<a href="https://www.linkedin.com/in/paulstatezny">&#xe252;</a>
-				<a href="https://github.com/paulstatezny">&#xe237;</a>
-				<a href="https://twitter.com/paulstatezny">&#xe286;</a>
-				<a href="mailto:paulstatezny@gmail.com">&#xe224;</a>
-			</section>
-			<section class="summary">
-				<p>I view software development as a craft whose primary goal is improving the lives of others.</p>
-				<p>I have a passion for learning and applying time-tested principles of quality software development, and for passing them along through mentoring others.</p>
-			</section>
-			<section class="capabilities">
-				<h2 class="color-primary">Capabilities</h2>
+			<header class="container">
+				<h1 class="color-primary">Paul Statezny</h1>
+				<h2 class="color-secondary">I'm an experienced software developer<br>specializing in full-stack web development.</h2>
+				<section class="links">
+					<a href="https://www.linkedin.com/in/paulstatezny">&#xe252;<span class="sr-only">LinkedIn</span></a>
+					<a href="https://github.com/paulstatezny">&#xe237;<span class="sr-only">GitHub</span></a>
+					<a href="https://twitter.com/paulstatezny">&#xe286;<span class="sr-only">Twitter</span></a>
+					<a href="mailto:paulstatezny@gmail.com">&#xe224;<span class="sr-only">Email</span></a>
+				</section>
+			</header>
+			<div class="background--light">
+				<div class="separator"></div>
+				<div class="container">
+					<div class="row">
+						<section class="summary column-container__half-column">
+							<h2>My Philosophy</h2>
+							<p>I view software development as a craft whose primary goal is improving the lives of others.</p>
+							<p>I have a passion for learning and applying time-tested principles of quality software development, and for passing them along through mentoring others.</p>
+						</section>
+						<section class="capabilities column-container__half-column">
+							<h2>My Capabilities</h2>
 
-				<h3 class="color-tertiary">Frontend</h3>
-				<p>JavaScript, React.js, Angular.js, jQuery.</p>
+							<h3 class="color-tertiary">Frontend</h3>
+							<p class="condensed-text">JavaScript, React.js, Angular.js, jQuery.</p>
 
-				<h3 class="color-tertiary">Backend</h3>
-				<p>PHP, Node.js, Java, MySQL.</p>
+							<h3 class="color-tertiary">Backend</h3>
+							<p class="condensed-text">PHP, Node.js, Java, MySQL.</p>
 
-				<h3 class="color-tertiary">Server Administration</h3>
-				<p>Bash Scripting, development environment setup.</p>
+							<h3 class="color-tertiary">Server Administration</h3>
+							<p class="condensed-text">Bash Scripting, development environment setup.</p>
 
-				<h3 class="color-tertiary">Technical Leadership</h3>
-				<p>Leading teams, choosing fitting technologies, mentoring other developers.</p>
+							<h3 class="color-tertiary">Technical Leadership</h3>
+							<p class="condensed-text">Leading teams, choosing fitting technologies, mentoring other developers.</p>
+						</section>
+					</div>
+				</div>
+			</div>
+			<section class="container call-to-action">
+				<h3 class="color-primary">Can I help you build something great? <a href="mailto:paulstatezny@gmail.com">Shoot me an email.</a> I'd love to chat.</h3>
 			</section>
 		</main>
 	</body>
