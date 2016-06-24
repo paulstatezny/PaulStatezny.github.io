@@ -34,7 +34,7 @@
 				background-color: #181743;
 			}
 
-			header.container {
+			.container {
 				text-align: center;
 				padding: 100px 15px 80px;
 			}
@@ -88,6 +88,10 @@
 				position: relative;
 			}
 
+			header.container {
+				padding-top: 90px;
+			}
+
 			.row {
 				overflow: auto;
 			}
@@ -103,9 +107,14 @@
 				box-sizing: border-box;
 			}
 
-			@media (max-width: 699px) {
+			@media (max-width: 768px) {
 				.column-container__half-column {
 					width: 100%;
+				}
+
+				.capabilities {
+					text-align: left;
+					padding-left: 0;
 				}
 			}
 
@@ -186,7 +195,7 @@
 					padding: 45px 15px;
 				}
 
-				header.container {
+				.container {
 					padding: 80px 15px 60px;
 				}
 			}
@@ -207,24 +216,41 @@
 				.call-to-action h3 {
 					font-size: 1.3em;
 				}
+
+				header.container {
+					padding-top: 60px;
+				}
 			}
 
-			@media (max-width: 399px) {
+			@media (max-width: 375px) {
 				h1 {
 					font-size: 3em;
 					margin-bottom: 0.2em;
 				}
 
 				header h2 {
-					padding: 0 15px;
+					padding: 0;
+					font-size: 1.3em;
 				}
 
 				.links a {
 					font-size: 3.2em;
 				}
+			}
 
-				.container {
-					padding: 30px 7px;
+			@media (max-width: 320px) {
+				h1 {
+					font-size: 3em;
+					margin-bottom: 0.2em;
+				}
+
+				header h2 {
+					padding: 0;
+					font-size: 1.2em;
+				}
+
+				.links a {
+					font-size: 3.2em;
 				}
 			}
 		</style>
@@ -253,16 +279,16 @@
 						<section class="capabilities column-container__half-column">
 							<h2>My Capabilities</h2>
 
-							<h3 class="color-tertiary">Frontend</h3>
+							<h3 class="color-secondary">Frontend</h3>
 							<p class="condensed-text">JavaScript, React.js, Angular.js, jQuery.</p>
 
-							<h3 class="color-tertiary">Backend</h3>
+							<h3 class="color-secondary">Backend</h3>
 							<p class="condensed-text">PHP, Node.js, Java, MySQL.</p>
 
-							<h3 class="color-tertiary">Server Administration</h3>
+							<h3 class="color-secondary">Server Administration</h3>
 							<p class="condensed-text">Bash Scripting, development environment setup.</p>
 
-							<h3 class="color-tertiary">Technical Leadership</h3>
+							<h3 class="color-secondary">Technical Leadership</h3>
 							<p class="condensed-text">Leading teams, choosing fitting technologies, mentoring other developers.</p>
 						</section>
 					</div>
