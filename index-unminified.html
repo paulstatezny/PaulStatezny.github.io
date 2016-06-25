@@ -2,6 +2,7 @@
 
 <html>
 	<head>
+		<title>Software Developer - Paul Statezny</title>
 		<link href="https://fonts.googleapis.com/css?family=Rokkitt" rel="stylesheet" type="text/css">
 		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
 		<link href="https://github.com/drinchev/monosocialiconsfont/blob/master/MonoSocialIconsFont-1.10.eot?raw=true" rel="stylesheet" type="text/css">
@@ -19,7 +20,7 @@
 				font-style: normal;
 			}
 
-			html, body, p, h1, h2, h3, a:link, a:active, a:visited {
+			html, body, p, h1, h2, h3, a:link, a:active, a:visited, .subtitle {
 				margin: 0;
 				padding: 0;
 				color: #FFFFFF;
@@ -30,7 +31,7 @@
 				background-color: #181743;
 			}
 
-			h1, h2, .call-to-action {
+			h1, h2, .call-to-action, .subtitle {
 				font-family: 'Rokkitt', serif;
 			}
 
@@ -38,7 +39,7 @@
 				font-size: 6em;
 			}
 
-			h2 {
+			h2, .subtitle {
 				font-size: 2.4em;
 			}
 
@@ -52,6 +53,10 @@
 
 			section {
 				padding: 20px 0;
+			}
+
+			.subtitle span {
+				display: block;
 			}
 
 			.container {
@@ -165,7 +170,7 @@
 					font-size: 5em;
 				}
 
-				header h2 {
+				.subtitle {
 					font-size: 2em;
 				}
 
@@ -179,7 +184,7 @@
 					font-size: 4.5em;
 				}
 
-				header h2 {
+				.subtitle {
 					font-size: 1.65em;
 				}
 
@@ -201,7 +206,7 @@
 					font-size: 4em;
 				}
 
-				header h2 {
+				.subtitle {
 					font-size: 1.45em;
 				}
 
@@ -224,7 +229,7 @@
 					margin-bottom: 0.2em;
 				}
 
-				header h2 {
+				.subtitle {
 					padding: 0;
 					font-size: 1.3em;
 				}
@@ -240,7 +245,7 @@
 					margin-bottom: 0.2em;
 				}
 
-				header h2 {
+				.subtitle {
 					padding: 0;
 					font-size: 1.0em;
 				}
@@ -259,8 +264,9 @@
 		<main>
 			<header class="container">
 				<h1 class="color-primary">Paul Statezny</h1>
-				<h2 class="color-secondary">I'm an experienced software developer<br>specializing in full-stack web development.</h2>
+				<p class="subtitle color-secondary"><span>I'm an experienced software developer</span> <span>specializing in full-stack web development.</span></p>
 				<section class="links">
+					<h2 class="sr-only">Find me online</h2>
 					<a href="https://www.linkedin.com/in/paulstatezny">&#xe252;<span class="sr-only">LinkedIn</span></a>
 					<a href="https://github.com/paulstatezny">&#xe237;<span class="sr-only">GitHub</span></a>
 					<a href="https://twitter.com/paulstatezny">&#xe286;<span class="sr-only">Twitter</span></a>
