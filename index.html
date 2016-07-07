@@ -55,10 +55,6 @@
 				padding: 20px 0;
 			}
 
-			.subtitle span {
-				display: block;
-			}
-
 			.container {
 				text-align: center;
 				padding: 100px 15px 80px;
@@ -68,6 +64,8 @@
 				display: block;
 				padding: 10px 0;
 				background-color: rgba(24, 23, 67, 0.8);
+				border: 0;
+				margin: 0;
 			}
 
 			.color-primary {
@@ -101,19 +99,22 @@
 				overflow: auto;
 			}
 
-			.column-container__half-column, .column-container__full-column {
-				float: left;
-				text-align: left;
-				padding: 10px;
+			.column-container__half-column, section.column-container__full-column {
+				padding-left: 10px;
+				padding-right: 10px;
 				box-sizing: border-box;
 			}
 
 			.column-container__half-column {
-			  width: 50%;
+				padding-top: 10px;
+				padding-bottom: 10px;
+				float: left;
+				text-align: left;
+				width: 50%;
 			}
 
 			.column-container__full-column {
-			  width: 100%;
+				width: 100%;
 			}
 
 			@media (max-width: 768px) {
@@ -123,6 +124,10 @@
 
 				.capabilities {
 					text-align: left;
+				}
+
+				.medium-block {
+					display: block;
 				}
 			}
 
@@ -163,8 +168,9 @@
 			.summary {
 				text-align: left;
 			}
+
 			.capabilities h3 {
-				font-size: 1.2em;
+				font-size: 1.3em;
 				margin-top: 0.5em;
 			}
 
@@ -174,11 +180,11 @@
 
 			@media (max-width: 699px) {
 				h1 {
-					font-size: 5em;
+					font-size: 14vw;
 				}
 
 				.subtitle {
-					font-size: 2em;
+					font-size: 5vw;
 				}
 
 				.links a {
@@ -187,43 +193,22 @@
 			}
 
 			@media (max-width: 599px) {
-				h1 {
-					font-size: 4.5em;
-				}
-
-				.subtitle {
-					font-size: 1.65em;
-				}
-
 				.links a {
 					font-size: 4em;
 				}
 
 				.container {
-					padding: 45px 15px;
-				}
-
-				.container {
-					padding: 80px 15px 60px;
+					padding: 80px 0 60px;
 				}
 			}
 
 			@media (max-width: 499px) {
-				h1 {
-					font-size: 4em;
-				}
-
-				.subtitle {
-					font-size: 1.4em;
-					padding: 0 20px;
-				}
-
 				.container {
-					padding: 40px 10px;
+					padding: 40px 0;
 				}
 
 				.call-to-action h3 {
-					font-size: 1.3em;
+					font-size: 5.5vw;
 				}
 
 				header.container {
@@ -232,30 +217,28 @@
 			}
 
 			@media (max-width: 375px) {
-				h1 {
-					font-size: 3em;
-					margin-bottom: 0.2em;
-				}
-
-				.subtitle {
-					padding: 0 10px;
-					font-size: 1.3em;
-				}
-
 				.links a {
 					font-size: 3.2em;
+				}
+
+				.call-to-action h3 {
+					font-size: 6.7vw;
+					padding: 0 2vw;
+				}
+
+				.medium-block {
+					display: inline;
+				}
+
+				.small-block {
+					display: block;
 				}
 			}
 
 			@media (max-width: 330px) {
-				h1 {
-					font-size: 3em;
-					margin-bottom: 0.2em;
-				}
-
 				.subtitle {
 					padding: 0 25px;
-					font-size: 1.5em;
+					font-size: 7vw;
 				}
 
 				.links a {
@@ -263,7 +246,7 @@
 				}
 
 				.container {
-					padding: 40px 5px;
+					padding: 40px 0;
 				}
 			}
 		</style>
@@ -272,7 +255,8 @@
 		<main>
 			<header class="container">
 				<h1 class="color-primary">Paul Statezny</h1>
-				<p class="subtitle color-secondary"><span>I'm an experienced software developer</span> <span>specializing in full-stack web development.</span></p>
+				<p class="subtitle color-secondary">I'm an experienced software developer specializing in full-stack web development.</p>
+
 				<section class="links">
 					<h2 class="sr-only">Find me online</h2>
 					<a target="_blank" href="https://www.linkedin.com/in/paulstatezny">&#xe252;<span class="sr-only">LinkedIn</span></a>
@@ -281,35 +265,42 @@
 					<a target="_blank" href="mailto:paulstatezny@gmail.com">&#xe224;<span class="sr-only">Email</span></a>
 				</section>
 			</header>
+
 			<div class="background--light">
-				<div class="separator"></div>
-				<div class="container">
-					<div class="row">
-						<section class="summary column-container__half-column">
-							<h2>My Philosophy</h2>
-							<p>I view software development as a craft whose primary goal is improving the lives of others.</p>
-							<p>I have a passion for learning and applying time-tested principles of quality software development, and for passing them along through mentoring others.</p>
-						</section>
-						<section class="capabilities column-container__half-column">
-							<h2>My Capabilities</h2>
+				<hr class="separator"></hr>
+				<div class="container row">
+					<section class="summary column-container__half-column">
+						<h2>My Philosophy</h2>
+						<p>I view software development as a craft whose primary goal is improving the lives of others.</p>
+						<p>I have a passion for learning and applying time-tested principles of quality software development, and for passing them along through mentoring others.</p>
+					</section>
 
-							<h3 class="color-secondary">Frontend</h3>
-							<p class="condensed-text">JavaScript, React.js, Angular.js, jQuery.</p>
+					<section class="capabilities column-container__half-column">
+						<h2>My Capabilities</h2>
 
-							<h3 class="color-secondary">Backend</h3>
-							<p class="condensed-text">PHP, Node.js, Java, MySQL.</p>
+						<h3 class="color-secondary">Frontend</h3>
+						<p class="condensed-text">JavaScript, React.js, Angular.js, jQuery.</p>
 
-							<h3 class="color-secondary">Server Administration</h3>
-							<p class="condensed-text">Bash Scripting, development environment setup.</p>
+						<h3 class="color-secondary">Backend</h3>
+						<p class="condensed-text">PHP, Node.js, Java, MySQL.</p>
 
-							<h3 class="color-secondary">Technical Leadership</h3>
-							<p class="condensed-text">Leading teams, choosing fitting technologies, mentoring other developers.</p>
-						</section>
-					</div>
+						<h3 class="color-secondary">Server Administration</h3>
+						<p class="condensed-text">Bash Scripting, development environment setup.</p>
+
+						<h3 class="color-secondary">Technical Leadership</h3>
+						<p class="condensed-text">Leading teams, mentoring other developers.</p>
+					</section>
 				</div>
 			</div>
 			<section class="container call-to-action column-container__full-column">
-				<h3 class="color-primary">Can I help you build something great? <a href="mailto:paulstatezny@gmail.com">Shoot me an email.</a> I'd love to chat.</h3>
+				<h3 class="color-primary">
+					<span class="medium-block">Can I help you build something great?</span>
+
+					<span class="medium-block">
+						<a href="mailto:paulstatezny@gmail.com">Shoot me an email.</a>
+						<span class="small-block">I'd love to chat.</span>
+					</span>
+				</h3>
 			</section>
 		</main>
 		<script>
